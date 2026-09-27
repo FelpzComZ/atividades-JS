@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Exercícios JavaScript</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        p.subtitle {
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+            border-left: 5px solid #3498db;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            border-left-color: #2ecc71;
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Painel de Exercícios JS</h1>
+    <p class="subtitle">Clica em qualquer exercício para o executar</p>
+
+    <div class="grid-container">
+        <a href="ex01.html" class="card">
+            <div>
+                <h2>Exercício 01</h2>
+                <p>Antecessor e Sucessor de um número.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex02.html" class="card">
+            <div>
+                <h2>Exercício 02</h2>
+                <p>Operações aritméticas básicas (+, -, *, /).</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex03.html" class="card">
+            <div>
+                <h2>Exercício 03</h2>
+                <p>Cálculo de Média de notas.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex04.html" class="card">
+            <div>
+                <h2>Exercício 04</h2>
+                <p>Cálculo da Área do retângulo.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex05.html" class="card">
+            <div>
+                <h2>Exercício 05</h2>
+                <p>Conversão de Celsius para Fahrenheit.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex06.html" class="card">
+            <div>
+                <h2>Exercício 06</h2>
+                <p>Número positivo, negativo ou zero.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex07.html" class="card">
+            <div>
+                <h2>Exercício 07</h2>
+                <p>Verificação de maioridade.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex08.html" class="card">
+            <div>
+                <h2>Exercício 08</h2>
+                <p>Verificação de número par ou ímpar.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex09.html" class="card">
+            <div>
+                <h2>Exercício 09</h2>
+                <p>Maior entre dois números.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex10.html" class="card">
+            <div>
+                <h2>Exercício 10</h2>
+                <p>Aprovação, Recuperação ou Reprovação.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex11.html" class="card">
+            <div>
+                <h2>Exercício 11</h2>
+                <p>Desconto para compras acima de R$ 200.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex12.html" class="card">
+            <div>
+                <h2>Exercício 12</h2>
+                <p>Maior entre três números.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex13.html" class="card">
+            <div>
+                <h2>Exercício 13</h2>
+                <p>Calculadora simples com <code>switch</code>.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex14.html" class="card">
+            <div>
+                <h2>Exercício 14</h2>
+                <p>Conversor de Unidades de Medida.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex15.html" class="card">
+            <div>
+                <h2>Exercício 15</h2>
+                <p>Menu de Pedidos de Lanchonete.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex16.html" class="card">
+            <div>
+                <h2>Exercício 16</h2>
+                <p>Condições de Pagamento e Descontos/Juros.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex17.html" class="card">
+            <div>
+                <h2>Exercício 17</h2>
+                <p>Calculadora de IMC.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex18.html" class="card">
+            <div>
+                <h2>Exercício 18</h2>
+                <p>Classificação Indicativa para Cinema.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex19.html" class="card">
+            <div>
+                <h2>Exercício 19</h2>
+                <p>Abastecimento de Combustível com Desconto.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+
+        <a href="ex20.html" class="card">
+            <div>
+                <h2>Exercício 20</h2>
+                <p>Sistema Integrado de Compras e Pagamento.</p>
+            </div>
+            <span class="badge">Executar &rarr;</span>
+        </a>
+    </div>
+
+</body>
+</html>
